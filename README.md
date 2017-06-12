@@ -1,3 +1,7 @@
+# INFO
+This is just a mod to henkaku.suprx to move henkaku settings to the bottom of the settings app.
+to install goto ux0:tai (or ur0:tai whatever ur using) modify the strings for *NPXS10015 and *NPXS10016 to point to this modded suprx. reload config and now ur settings are at the bottom..
+
 # Build
 
 Only Linux is supported. You will need:
