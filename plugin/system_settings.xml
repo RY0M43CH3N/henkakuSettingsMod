@@ -26,13 +26,6 @@
                    title="msg_airplanemode"
                    icon="tex_flight_mode"
                    hint="msg_airplanemode_info" />
-
-    <!-- HENkaku Settings -->
-    <link id="henkaku_settings"
-            title="msg_henkaku_settings"
-            icon="tex_spanner"
-            file="idu_settings.xml"
-            />
     
     <!-- ネットワーク設定 -->
     <link id="network_settings"
@@ -117,7 +110,12 @@
           file="powersave_settings.xml"
           title="msg_power_saving_settings"
           icon="tex_power_save"/>
-
+    <!-- HENkaku Settings -->
+    <link id="henkaku_settings"
+            title="msg_henkaku_settings"
+            icon="tex_spanner"
+            file="idu_settings.xml"
+            />
     <!-- IDU Settings -->
     <link id="idu_settings"
           file="idu_settings.xml"
