@@ -15,7 +15,7 @@ PKG_URL_PREFIX="http://your_url_here.com/pkg/"
 HENKAKU_BIN_URL="http://your_url_here.com/henkaku.bin"
 
 # Version to show in Settings
-HENKAKU_RELEASE=7
+HENKAKU_RELEASE=10
 BETA_RELEASE=0
 
 # CRC of taihen.skprx, will redownload if mismatch
