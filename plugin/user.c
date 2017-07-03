@@ -266,7 +266,7 @@ static tai_hook_ref_t g_scePafToplevelInitPluginFunctions_SceSettings_hook;
 static int scePafToplevelInitPluginFunctions_SceSettings_patched(void *a1, int a2, uint32_t *funcs) {
   int res = TAI_CONTINUE(int, g_scePafToplevelInitPluginFunctions_SceSettings_hook, a1, a2, funcs);
   char *plugin = (char *)((uint32_t *)a1)[1];
-  if (sceClibStrncmp(plugin, "idu_settings_plugin", 19) == 0) {
+  if (sceClibStrncmp(plugin, "system_update_plugin", 19) == 0) {
     if (funcs[6] != (uint32_t)OnButtonEventIduSettings_patched) {
       g_OnButtonEventIduSettings_hook = (void *)funcs[6];
       funcs[6] = (uint32_t)OnButtonEventIduSettings_patched;
@@ -280,7 +280,7 @@ static int scePafMiscLoadXmlLayout_SceSettings_patched(int a1, void *xml_buf, in
   if ((82+22) < xml_size && sceClibStrncmp(xml_buf+82, "system_settings_plugin", 22) == 0) {
     xml_buf = (void *)&_binary_system_settings_xml_start;
     xml_size = (int)&_binary_system_settings_xml_size;
-  } else if ((79+19) < xml_size && sceClibStrncmp(xml_buf+79, "idu_settings_plugin", 19) == 0) {
+  } else if ((79+19) < xml_size && sceClibStrncmp(xml_buf+79, "system_update_plugin", 19) == 0) {
     xml_buf = (void *)&_binary_henkaku_settings_xml_start;
     xml_size = (int)&_binary_henkaku_settings_xml_size;
   }

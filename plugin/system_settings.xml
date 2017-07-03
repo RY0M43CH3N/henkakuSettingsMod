@@ -6,13 +6,13 @@
                 title="msg_settings">
 
     <!-- Sandbox Settings -->
-    <link id="sandbox_settings"
+    <link id="sandbox_setttings"
           file="sandbox_settings.xml"
           title="Sandbox Settings"
           icon="tex_spanner"/>
 
     <!-- フレームワークテスト -->
-    <link id="framework_test"
+    <link id="framework_testt"
       file="framework_test.xml"
       title="フレームワークテスト"
       icon="tex_spanner"/>
@@ -20,12 +20,20 @@
     <!-- テスト用と本番用でなんとなく分ける -->
     <spacer id="spacer0" />
 
+            <!-- HENkaku Settings -->
+
     <!-- 機内モード -->
     <toggle_switch id="flight_mode"
                    key="/CONFIG/SYSTEM/flight_mode"
                    title="msg_airplanemode"
                    icon="tex_flight_mode"
                    hint="msg_airplanemode_info" />
+
+    <link id="henkaku_settings"
+            title="msg_henkaku_settings"
+            icon="tex_spanner"
+            file="system_update.xml"
+            />
     
     <!-- ネットワーク設定 -->
     <link id="network_settings"
@@ -110,20 +118,16 @@
           file="powersave_settings.xml"
           title="msg_power_saving_settings"
           icon="tex_power_save"/>
-    <!-- HENkaku Settings -->
-    <link id="henkaku_settings"
-            title="msg_henkaku_settings"
-            icon="tex_spanner"
-            file="idu_settings.xml"
-            />
+    
+
     <!-- IDU Settings -->
-    <link id="idu_settings"
+    <link id="idu_setttings"
           file="idu_settings.xml"
           title="IDU Settings"
           icon="tex_spanner"/>
 
     <!-- ★Debug Settings -->
-    <link id="debug_settings"
+    <link id="debug_setttings"
           file="debug_settings.xml"
           title="★Debug Settings"
           icon="tex_spanner"/>
